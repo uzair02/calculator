@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+  <body> 
+    <h1 class="mainh col-lg-3 px-4 py-4">Calculator</h1>
+    <div class="container2">
+        <input type="text" id="lcd" name="lcd">
+    </div>
+    <div class="container1">
+        <div class="w-100 col-lg-12 p-2">
+        <div id="7" onclick="lcd.value += '7'" class="com btn1  p-4 d-inline-block col-lg-2 col-sm-2">7</div>
+        <div id="8" onclick="lcd.value += '8'" class="com btn2  p-4 d-inline-block col-lg-2 col-sm-2">8</div>
+        <div id="9" onclick="lcd.value += '9'" class="com btn3  p-4 d-inline-block col-lg-2 col-sm-2">9</div>
+        <div id="x" onclick="lcd.value += '*'" class="com btn4  p-4 d-inline-block col-lg-2 col-sm-2">x</div>
+        </div>
+        <div class="px-2">
+        <div id="4" onclick="lcd.value += '4'" class="com btn5 p-4 d-inline-block col-lg-2 col-sm-2">4</div>
+        <div id="5" onclick="lcd.value += '5'" class="com btn6 p-4 d-inline-block col-lg-2 col-sm-2">5</div>
+        <div id="6" onclick="lcd.value += '6'" class="com btn7 p-4 d-inline-block col-lg-2 col-sm-2">6</div>
+        <div id="-" onclick="lcd.value += '-'" class="com btn8 p-4 d-inline-block col-lg-2 col-sm-2">-</div>
+        </div>
+        <div class="p-2">
+        <div id="1" onclick="lcd.value += '1'" class="com btn9 p-4 d-inline-block col-lg-2 col-sm-2">1</div>
+        <div id="2" onclick="lcd.value += '2'" class="com btn10 p-4 d-inline-block col-lg-2 col-sm-2">2</div>
+        <div id="3" onclick="lcd.value += '3'" class="com btn11 p-4 d-inline-block col-lg-2 col-sm-2">3</div>
+        <div id="+" onclick="lcd.value += '+'" class="com btn12 p-4 d-inline-block col-lg-2 col-sm-2">+</div>
+        </div>
+        <div class="px-2">
+        <div id="/" onclick="lcd.value += '/'" class="com btn13 p-4 d-inline-block col-lg-2 col-sm-2">/</div>
+        <div id="0" onclick="lcd.value += '0'" class="com btn14 p-4 d-inline-block col-lg-2 col-sm-2">0</div>
+        <div id="=" onclick="calculate()" class="com btn15 p-4 d-inline-block col-lg-2 col-sm-2">=</div>
+        <div id="c" onclick="cleartext()" class="com btn15 p-4 d-inline-block col-lg-2 col-sm-2">c</div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
